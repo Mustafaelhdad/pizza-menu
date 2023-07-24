@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
-
 const pizzaData = [
   {
     name: "Focaccia",
@@ -45,24 +42,3 @@ const pizzaData = [
     soldOut: false,
   },
 ];
-
-function Pizza() {
-  return
-  (<>
-    <h2>Pizza Prosciutto</h2>
-    <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
-  </>)
-}
-
-function App() {
-  return (
-    <>
-      <div className="App">
-        HI THERE
-      </div>
-      <Pizza />
-    </>
-  );
-}
-
-export default App;
