@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Menu from './components/Menu';
 
 const pizzaData = [
   {
@@ -46,21 +47,13 @@ const pizzaData = [
   },
 ];
 
-function Pizza() {
-  return
-  (<>
-    <h2>Pizza Prosciutto</h2>
-    <p>Tomato, mozarella, ham, aragula, and burrata cheese</p>
-  </>)
-}
 
 function App() {
   return (
     <>
-      <div className="App">
-        HI THERE
-      </div>
-      <Pizza />
+      <Header />
+      <Menu />
+      <Footer />
     </>
   );
 }
