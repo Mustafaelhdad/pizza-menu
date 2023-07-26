@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer>{new Date().toLocaleDateString()}We're currently open!</footer>
+    <footer className='footer'>{new Date().toLocaleDateString()} We're currently open!</footer>
   )
 }
 

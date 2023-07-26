@@ -3,13 +3,10 @@ import Pizza from './Pizza'
 
 function Menu() {
   return (
-    <div>
+    <main className='menu'>
       <h2>Our Menu</h2>
-      <Pizza />
-      <Pizza />
-      <Pizza />
-      <Pizza />
-    </div>
+      <Pizza pizzaName='something' ingrediant='another thing' photo='pizzas/margherita.jpg' price='12'/>
+    </main>
   )
 }
 
