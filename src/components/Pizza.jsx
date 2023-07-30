@@ -2,15 +2,15 @@ import React from 'react'
 
 function Pizza({photo, pizzaName, ingrediant, price, soldOut}) {
   
-  if (soldOut)  return null
+  // if (soldOut) return null
 
   return (
-    <li className='pizza'>
+    <li className={`pizza ${soldOut? "sold-out":""}`}>
       <img src={photo} alt="" />
       <div>
         <h3>{pizzaName}</h3>
         <p>{ingrediant}</p>
-        <span>{price}</span>
+        {soldOut ? (<span>SOLD OUT</span>) : (<span>{price}</span>)}
       </div>
     </li>
   )

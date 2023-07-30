@@ -51,11 +51,17 @@ function Menu() {
     <main className='menu'>
       <h2>Our Menu</h2>
       {pizzaData ? (
+        <>
+        <p>
+          Authentic Italian cuisine. 6 creative dishes to choose from. All from our stone oven, all organic, all delicious.
+        </p>
+
       <ul className='pizzas'>
         {
          pizzaData.map(pizza=><Pizza soldOut={pizza.soldOut} pizzaName={pizza.name} ingrediant={pizza.ingredients} photo={pizza.photoName} price={pizza.price}/>)
         }
       </ul>
+      </>
       ) : (<p>We're still working on our menu. Please come back later :)</p>)}
     </main>
   )
